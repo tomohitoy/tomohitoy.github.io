@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic);
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+div.main {
+    min-height: 100%;
+    margin-bottom: -3em;
+}
+
+div.main:after {
+    content: "";
+    display: block;
+    height: 3em;
+}
+
+.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.footer {
+    margin: 0px;
+    width: 100%;
+    height: 3em;
+    background-color: #BDBDBD;
+}
+
+h1.name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-size: 20pt;
+}
+
+h3.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14pt;
+}
+
+p.copyright {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10pt;
+}
+
