@@ -1,0 +1,24 @@
+{
+  "businesses": [
+    {
+      "name": "Data Analytics",
+      "description": "調査計画・設計，データ収集から統計解析まで，データに関するトータル開発"
+    },
+    {
+      "name": "Web Development",
+      "description": "Ruby on Rails, Python, JavaScript (D3.js, Angular.js)を用いたWebアプリ開発"},
+    {
+      "name": "Workshop Promotion",
+      "description": "WordpressでのCMS作成，映像編集などによるワークショップ支援"}
+  ],
+  "hobbies": [
+    {
+      "name": "Tennis",
+      "description": "小学校6年生の頃から続けています．いつのまにか14年も続けていることになります．得意ショットはサーブ，スマッシュ，ボレー，フォアハンドストローク．苦手ショットはトップスピンのバックハンドストロークです．バックハンドストロークはほとんどスライスかロブしか打ちません．"
+    },
+    {
+      "name": "Reading",
+      "description": "いろいろな本を読みます．最近読んでいる本は，新幹線開通で今ホットな石川県出身の日本の哲学者，鈴木大拙と西田幾多郎の本です．内容はなかなか難しいですが，なんとか実体験と上手くつなげて読もうと努力しています．"
+    }
+  ]
+}
