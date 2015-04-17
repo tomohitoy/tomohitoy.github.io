@@ -8,7 +8,7 @@ html, body {
 
 div.main {
   min-height: 100%;
-  margin-bottom: -3em;
+  margin: 0 auto -3em;
 }
 
 div.main:after {
@@ -133,4 +133,7 @@ a.item:active {
   top: 0.1em;
 }
 
-
+a.product {
+  text-decoration: none;
+  color: #000000;
+}

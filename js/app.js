@@ -3,9 +3,9 @@
   var tomohitoy  = {};
   tomohitoy.url = {};
   tomohitoy.url.basic = "./db/basic.json";
-  tomohitoy.url.publications = "./db/publications.json";
-  tomohitoy.url.introduction = "./db/introduction.json";
-  tomohitoy.name = "Tomohito Yamazaki";
+  tomohitoy.url.about = "./db/about.json";
+  tomohitoy.url.service = "./db/service.json";
+  tomohitoy.url.works = "./db/works.json";
   var tomohitoyApp = angular.module("tomohitoyApp",[]);
   tomohitoyApp.controller("BasicController", function($scope, $http) {
     $http.get(tomohitoy.url.basic)
@@ -15,23 +15,30 @@
       .error(function(data){
       });
   });
-  tomohitoyApp.controller("PublicationsController", function($scope,$http){
-    $http.get(tomohitoy.url.publications)
+  tomohitoyApp.controller("AboutController", function($scope, $http) {
+    $http.get(tomohitoy.url.about)
       .success(function(data){
-        $scope.publications = data;
-      })
-      .error(function(data){
-        alert("Fail to connect publications.json");
-      })
-  });
-  tomohitoyApp.controller("IntroductionController", function($scope,$http){
-    $http.get(tomohitoy.url.introduction)
-      .success(function(data){
-        $scope.businesses = data.businesses;
+        $scope.introduction = data.introduction;
         $scope.hobbies = data.hobbies;
       })
       .error(function(data){
-        alert("Fail to connect introduction.json");
+      });
+  });
+  tomohitoyApp.controller("ServiceController", function($scope,$http){
+    $http.get(tomohitoy.url.service)
+      .success(function(data){
+        $scope.services = data;
+      })
+      .error(function(data){
+      })
+  });
+  tomohitoyApp.controller("WorksController", function($scope,$http){
+    $http.get(tomohitoy.url.works)
+      .success(function(data){
+        $scope.business = data.business;
+        $scope.academic = data.academic;
+      })
+      .error(function(data){
       })
   });
 })();

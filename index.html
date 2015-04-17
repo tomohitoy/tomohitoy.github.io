@@ -17,21 +17,17 @@
         <div class="navbar">
           <ul class="list">
               <li class="menu"><a href="#home" class="item font-en">HOME</a></li>
-              <li class="menu"><a href="#intro" class="item font-en">INTROUCTION</a></li>
-              <li class="menu"><a href="#pubs" class="item font-en">PUBLICATION & PRESENTATION</a></li>
+              <li class="menu"><a href="#about" class="item font-en">ABOUT</a></li>
+              <li class="menu"><a href="#service" class="item font-en">SERVICE</a></li>
+              <li class="menu"><a href="#works" class="item font-en">WORKS</a></li>
           </ul>
         </div>
       </nav>
-      <section class="center" id="intro">
-        <h2 class="font-en">INTRODUCTION</h2>
-        <div ng-controller="IntroductionController">
-          <h3 class="font-en">MY BUSINESS</h3>
-          <div class="col-box">
-            <div ng-repeat="business in businesses">
-              <h3 class="font-en">{{ business.name }}</h3>
-              <p class="font-ja">{{ business.description }}</p>
-            </div>
-          </div>
+      <section class="center" id="about">
+        <h2 class="font-en">ABOUT</h2>
+        <div ng-controller="AboutController">
+          <h3 class="font-en">INTRODUCTION</h3>
+          <p class="font-ja">{{ introduction }}</p>
           <h3 class="font-en">MY HOBBIES</h3>
           <div class="col-box">
             <div ng-repeat="hobby in hobbies">
@@ -41,17 +37,38 @@
           </div>
         </div>
       </section>
-      <section class="center" id="pubs">
-        <h2 class="font-en">PUBLICATION & PRESENTATION</h2>
-        <div ng-controller="PublicationsController">
-          <div ng-repeat="publication in publications">
-            <h3 class="font-en">{{ publication.study_area }}</h3>
-            <div class="pub" ng-repeat="pub in publication.international">
+      <section class="center" id="service">
+        <h2 class="font-en">SERVICE</h2>
+        <div ng-controller="ServiceController">
+          <div class="col-box">
+            <div ng-repeat="service in services">
+              <h3 class="font-en">{{ service.name }}</h3>
+              <p class="font-ja">{{ service.description }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="center" id="works">
+        <h2 class="font-en">WORKS</h2>
+        <div ng-controller="WorksController">
+          <h3 class="font-en">BUSINESS PRODUCTS</h3>
+          <div ng-repeat="work in business">
+            <h3 class="font-en">{{ work.area }}</h3>
+            <div class="work" ng-repeat="product in work.products">
+              <p class="font-en">{{ product.title }}</p>
+              <p class="font-ja">{{ product.description }}</p>
+              <a class="font-en product" href="{{ product.url }}" ng-if="product.url">Product URL</a>
+            </div>
+          </div>
+          <h3 class="font-en">ACADEMIC STUDIES</h3>
+          <div ng-repeat="study in academic">
+            <h3 class="font-en">{{ study.area }}</h3>
+            <div class="work" ng-repeat="pub in study.international">
               <p class="font-en">
                 {{ pub.author }} ({{ pub.year }}), {{ pub.title }}, {{ pub.style }} Presented at {{ pub.conference }}, {{ pub.place }}, {{ pub.month }}., {{ pub.year }}
               </p>
             </div>
-            <div class="pub" ng-repeat="pub in publication.domestic">
+            <div class="work" ng-repeat="pub in study.domestic">
               <p class="font-ja">
                 {{ pub.author }} ({{ pub.year }}), {{ pub.title }}, {{ pub.conference }}({{ pub.style }}), {{ pub.year }}年{{ pub.month }}, {{ pub.place }}
               </p>
