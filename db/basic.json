@@ -4,9 +4,19 @@
     "en": "Tomohito Yamazaki"
   },
   "social": {
-    "email": "t07840ty@gmail.com",
-    "github": "tomohitoy",
-    "twitter": "@tomohitoy"
+    "email": "t07840ty[at]gmail.com",
+    "github": {
+      "id": "tomohitoy",
+      "url": "http://github.com/tomohitoy"
+    },
+    "twitter": {
+      "id": "tomohitoy",
+      "url": "http://twitter.com/tomohitoy"
+    },
+    "hatena": {
+      "id": "tomohitoy",
+      "url": "http://tomohitoy.hatenablog.com"
+    }
   },
   "title": {
     "ja": "何でも屋",
