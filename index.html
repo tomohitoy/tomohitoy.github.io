@@ -13,7 +13,16 @@
           <h3 class="title font-en">{{ basic.title.en }}</h3>
         </div>
       </header>
-      <nav>
+      <nav class="title" id="navbar">
+        <div class="navbar">
+          <ul class="list">
+              <li class="menu"><a href="#about" class="item font-en">ABOUT</a></li>
+              <li class="menu"><a href="#service" class="item font-en">SERVICE</a></li>
+              <li class="menu"><a href="#works" class="item font-en">WORKS</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="title" id="chaser">
         <div class="navbar">
           <ul class="list">
               <li class="menu"><a href="#home" class="item font-en">HOME</a></li>
@@ -23,10 +32,8 @@
           </ul>
         </div>
       </nav>
-      <section id="about" class="title">
-        <h2 class="font-en center">ABOUT</h2>
-      </section>
-      <section class="center">
+      <section id="about" class="center">
+        <h2 class="font-en title">ABOUT</h2>
         <div ng-controller="AboutController">
           <h3 class="font-en indent-1">INTRODUCTION</h3>
           <p class="font-ja indent-2">{{ introduction }}</p>
@@ -39,10 +46,8 @@
           </div>
         </div>
       </section>
-      <section id="service" class="title">
-        <h2 class="font-en center">SERVICE</h2>
-      </section>
-      <section class="center">
+      <section id="service" class="center">
+        <h2 class="font-en title">SERVICE</h2>
         <div ng-controller="ServiceController">
           <div class="col-box">
             <div ng-repeat="service in services">
@@ -52,10 +57,8 @@
           </div>
         </div>
       </section>
-      <section id="works" class="title">
-        <h2 class="font-en center">WORKS</h2>
-      </section>
-      <section class="center">
+      <section id="works" class="center">
+        <h2 class="font-en title">WORKS</h2>
         <div ng-controller="WorksController">
           <h3 class="font-en indent-1">BUSINESS PRODUCTS</h3>
           <div ng-repeat="work in business">
@@ -88,7 +91,7 @@
         <p class="copyright font-en">&copy; 2015 Tomohito Yamazaki</p>
       </footer>
     </div>
-    <p class="gotop"><a href="#home"><img src="" alt="gotop"></a></p>
+    <p class="gotop" id="topbtn"><a href="#home"><img src="./img/topbtn.png" alt="gotop"></a></p>
     <script src="./js/d3.js"></script>
     <script src="./js/jquery-2.1.3.js"></script>
     <script src="./js/underscore.js"></script>

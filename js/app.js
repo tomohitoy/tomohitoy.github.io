@@ -41,4 +41,26 @@
       .error(function(data){
       })
   });
+  tomohitoy.top_nav = $("#navbar").offset().top;
+  tomohitoy.sticky = false;
+  $(window).on("scroll",function(){
+    if ($(window).scrollTop() > tomohitoy.top_nav) {
+      if ( tomohitoy.sticky === false ) {
+        $("#chaser").slideDown();
+        tomohitoy.sticky = true;
+        $("#topbtn").fadeIn();
+      }
+    } else {
+      if (tomohitoy.sticky === true ) {
+        $("#chaser").slideUp();
+        tomohitoy.sticky = false;
+        $("#topbtn").fadeOut();
+      }
+    }
+  });
+  $("a[href^=#]").on("click",function(){
+    $("body, html").animate({scrollTop: $($(this).attr("href")).offset().top}, 400);
+    return false;
+  });
+  $
 })();

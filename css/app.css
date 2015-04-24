@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,100italic);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanshebrew.css);
 
 html, body {
@@ -25,7 +25,13 @@ div.main:after {
   height: 3vh;
 }
 
-.center {
+header.center {
+  width: 70%;
+  margin: 0 auto;
+}
+
+section.center {
+  padding-top: 4.5rem;
   width: 70%;
   margin: 0 auto;
 }
@@ -53,6 +59,7 @@ h1.name-en {
 
 .font-en {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
 }
 
 .font-ja {
@@ -60,17 +67,28 @@ h1.name-en {
   font-weight: 400;
 }
 
-section.title{
+nav.title{
   box-shadow: 0px 0px 10px #DEDEDE;
   background-color: #DEDEDE;
   width: 100%;
   padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
+  padding-bottom: 0.4vh;
 }
 
+nav#chaser{
+  position: fixed;
+  display:none;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
 
+h2.section{
+  font-size: 2rem;
+  font-weight: 300;
+}
 
-h3.title {
+h3.title{
   font-size: 1.4rem;
 }
 
@@ -133,7 +151,7 @@ ul.list {
 
 li.menu {
   display: inline;
-  padding: 0em 1.5em;
+  padding: 0em 2em;
 }
 
 
@@ -147,6 +165,7 @@ a.item {
   text-decoration: none;
   position: relative;
   color: #717171;
+  font-weight: 300;
 }
 
 a.item:hover{
@@ -176,4 +195,11 @@ a.product {
 
 .indent-4 {
   padding-left: 4vw;
+}
+
+p.gotop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
