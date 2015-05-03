@@ -62,5 +62,6 @@
     $("body, html").animate({scrollTop: $($(this).attr("href")).offset().top}, 400);
     return false;
   });
-  $
+  $("#load").hide();
+  $("#main").fadeIn();
 })();

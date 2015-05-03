@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./css/app.css" media="screen">
   </head>
   <body>
-    <div class="main">
+    <div class="loading" id="load">
+      <img src="./img/circle.gif" alt="loading">
+    </div>
+    <div class="main" id="main">
       <header class="center" id="home">
         <div ng-controller="BasicController">
           <h1 class="name name-en font-en">{{ basic.name.en }}</h1>
