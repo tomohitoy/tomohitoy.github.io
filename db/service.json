@@ -5,8 +5,10 @@
   },
   {
     "name": "Web Development",
-    "description": "Ruby on Rails, Python, JavaScript (D3.js, Angular.js)を用いたWebアプリ開発"},
-    {
-      "name": "Workshop Promotion",
-      "description": "WordpressでのCMS作成，映像編集などによるワークショップ支援"}
+    "description": "Ruby on Rails, Python, JavaScript (D3.js, Angular.js)を用いたWebアプリ開発"
+  },
+  {
+    "name": "Workshop Promotion",
+    "description": "WordpressでのCMS作成，映像編集などによるワークショップ支援"
+  }
 ]

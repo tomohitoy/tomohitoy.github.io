@@ -7,6 +7,11 @@
           "title": "Quickclick",
           "description": "クイズで学びデータを管理取得できるウェブアプリ",
           "url": "http://www.quickclick.jp"
+        },
+        {
+          "title": "Selflog Backend API Development",
+          "description": "セルフログアプリケーションのためのバックエンドAPI開発",
+          "url": ""
         }
       ]
     },
@@ -14,18 +19,23 @@
       "area": "Data Analytics",
       "products": [
         {
-          "title": "Business Analytics with Enquete Data",
+          "title": "Business Analytics",
           "description": "ビジネスに関係するアンケートデータを解析",
           "url": ""
         },
         {
-          "title": "Public Health Analytics with Rezept Data",
+          "title": "Public Health Analytics",
           "description": "レセプトデータから疾病発症並びに医療費予測モデルの構築",
           "url": ""
         },
         {
-          "title": "Algorithm Development with Advertisement Data",
+          "title": "Algorithm Development for Advertisement Industry",
           "description": "クリック確率予測，コンバージョン確率予測モデルの構築",
+          "url": ""
+        },
+        {
+          "title": "Marketing Research for Educational Industry",
+          "description": "教育業界におけるアンケート調査設計，データ解析，戦略立案",
           "url": ""
         }
       ]
