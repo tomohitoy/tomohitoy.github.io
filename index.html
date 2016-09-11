@@ -100,7 +100,9 @@
     </div>
     <div class="footer">
       <footer>
-        <p class="copyright font-en">&copy; 2016 Tomohito Yamazaki updated at <div ng-controller="BasicController">{{ basic.updated }}</div></p>
+        <div ng-controller="BasicController">
+          <p class="copyright font-en">&copy; 2016 Tomohito Yamazaki updated at {{ basic.updated }}</p>
+        </div>
       </footer>
     </div>
     <p class="gotop" id="topbtn"><a href="#home"><img src="./img/topbtn.png" alt="gotop"></a></p>
