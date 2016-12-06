@@ -75,11 +75,18 @@ h1.name-en {
 
 .font-en {
   font-family: 'Josefin Sans', sans-serif;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1;
   font-weight: 100;
 }
 
 .font-ja {
   font-family:'Noto Sans Hebrew', serif;
+  font-feature-settings: "palt" 1, "trad" 1;
+  -moz-font-feature-settings: "palt" 1, "trad" 1;
+  -webkit-font-feature-settings: "palt" 1, "trad" 1;
   font-weight: 400;
 }
 
@@ -220,3 +227,9 @@ p.gotop {
   right: 2rem;
 }
 
+
+.fraction {
+  font-feature-settings: "frac" 1;
+  -moz-font-feature-settings: "frac" 1;
+  -webkit-font-feature-settings: "frac" 1;
+}
