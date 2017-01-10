@@ -35,7 +35,7 @@
         },
         {
           "title": "Marketing Research for Educational Industry",
-          "description": "教育業界におけるアンケート調査設計，データ解析，戦略立案",
+          "description": "教育業界における定量調査，定性調査設計，データ解析，戦略立案",
           "url": ""
         }
       ]
@@ -96,6 +96,22 @@
         }
       ],
       "domestic": []
+    },
+    {
+      "area": "Bibliometrics",
+      "international": [
+        {
+          "style": "Poster",
+          "author": "Onozuka R, Yamazaki T, Kokuryo J",
+          "year": 2016,
+          "month": "Dec",
+          "title": "Redefiners of Discipline Borders: A Bayesian Detection Method for Conceptual Changes in Scientific Knowledge",
+          "conference": "The 2016 International Conference on Information Systems (ICIS 2016)",
+          "place": "Dublin(Ireland)"
+        }
+      ],
+      "domestic": []
     }
+
   ]
 }
