@@ -5,10 +5,14 @@
   },
   {
     "name": "Web Development",
-    "description": "Ruby on Rails, Python, JavaScript (D3.js, Angular.js)を用いたWebアプリ開発"
+    "description": "Ruby, Python, Go, JavaScript (D3.js, Angular.js)を用いたWebアプリ開発"
   },
   {
     "name": "Workshop Promotion",
     "description": "WordpressでのCMS作成，映像編集などによるワークショップ支援"
+  },
+  {
+    "name": "Project Supervision",
+    "description": "幼児から高齢者まで、老若男女が発見して学ぶプロジェクトの企画・設計・推進"
   }
 ]
