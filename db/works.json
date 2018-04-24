@@ -59,6 +59,11 @@
       "area": "Project Supervision",
       "products": [
         {
+          "title": "ArSchool",
+          "description": "「ことば」としての本物のプログラミングを学ぶ、プログラミングスクール主宰",
+          "url": "https://arschool.tech"
+        },
+        {
           "title": "Hands-on Programming Language Learning Workshop",
           "description": "「ことば」としてのプログラミングを学ぶワークショプを高齢者向けに企画・実施",
           "url": "http://www.shirokanedai-pc.com/pg/"

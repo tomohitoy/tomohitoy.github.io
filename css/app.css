@@ -84,10 +84,7 @@ h1.name-en {
 
 .font-ja {
   font-family:'Noto Sans Hebrew', serif;
-  font-feature-settings: "palt" 1, "trad" 1;
-  -moz-font-feature-settings: "palt" 1, "trad" 1;
-  -webkit-font-feature-settings: "palt" 1, "trad" 1;
-  font-weight: 400;
+   font-weight: 400;
 }
 
 nav.title{
