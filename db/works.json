@@ -37,6 +37,11 @@
           "title": "Marketing Research for Educational Industry",
           "description": "教育産業における定量調査，定性調査設計，データ解析，戦略立案",
           "url": ""
+        },
+        {
+          "title": "Marketing Research for Educational Industry",
+          "description": "教育産業における定量調査，定性調査設計，データ解析，戦略立案",
+          "url": ""
         }
       ]
     },
@@ -47,11 +52,6 @@
           "title": "ABLE",
           "description": "認知科学研究と教育実践の橋渡しを行う国際コンソーシアムの企画・運営",
           "url": "http://cogpsy.sfc.keio.ac.jp/able/"
-        },
-        {
-          "title": "Davos Experience in Tokyo",
-          "description": "ダボスの経験を東京で，英語でグローバルアジェンダのディスカッションを行うワークショップのWeb構築・映像編集支援",
-          "url": "http://dex.tokyo"
         }
       ]
     },
@@ -60,13 +60,8 @@
       "products": [
         {
           "title": "ArSchool",
-          "description": "「ことば」としての本物のプログラミングを学ぶ、プログラミングスクール主宰",
-          "url": "https://arschool.tech"
-        },
-        {
-          "title": "Hands-on Programming Language Learning Workshop",
-          "description": "「ことば」としてのプログラミングを学ぶワークショプを高齢者向けに企画・実施",
-          "url": "http://www.shirokanedai-pc.com/pg/"
+          "description": "プログラミングと工作をつないで探究する、小学生向けプログラミング教室を創業",
+          "url": "https://arschool.co.jp"
         }
       ]
     }
