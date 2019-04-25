@@ -9,7 +9,7 @@ let tableRowNum = 0;
 submitButton.addEventListener('click', () => {
   if(isNumber(numberA.value) && isNumber(numberB.value) && isNumber(numberC.value)){
     tableRowNum++;
-    if ((numberA.value < numberB.value) && (numberB.value < numberC.value)) {
+    if ((parseInt(numberA.value) < parseInt(numberB.value)) && (parseInt(numberB.value) < parseInt(numberC.value))) {
       resultTable.insertAdjacentHTML('beforeend', `<tr class="table-body"><td width="8%">${tableRowNum}</td><td width="50%">${numberA.value}, ${numberB.value}, ${numberC.value}</td><td width="42%">従っている（＋）</td></tr>`);
     } else {
       resultTable.insertAdjacentHTML('beforeend', `<tr class="table-body"><td width="8%">${tableRowNum}</td><td width="50%">${numberA.value}, ${numberB.value}, ${numberC.value}</td><td width="42%">従っていない（ー）</td></tr>`);
