@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wason's 2-4-6 Task</title>
+  <link rel="stylesheet" href="./css/main.css" media="screen">
+</head>
+<body>
+  <div class="main">
+    <div class="title text-center">
+      <h2>Wason(1960)'s 2-4-6 Task</h2>
+    </div>
+    <div class="setsumei-window">
+      <p>この課題では、皆さんに「2,4,6の３つ数の裏にある規則性」を見つけてもらいます。</p>
+      <ol>
+        <li>まず、当然のことながら2,4,6の３つの数はその規則性に従っています。</li>
+        <li>あなたは、下の３つのテキストボックスに数字を入れてその３つの数字が、2,4,6の裏にある規則性に「従っている（＋）」か「従っていない（ー）」を確かめられます。</li>
+        <li>あなたが確かめた履歴は右の表に表示されます。</li>
+        <li>自分の考えている規則性に自信が持てたらこの課題を終了する、ボタンをおしてください。</li>
+        <li>このサイトで設定された「2,4,6」の３つの数が従う『ある規則性』を知ることができます。</li>
+      </ol>
+    </div>
+    <div class="input-window">
+      <p class="label-a input-label">1つめの数字</p>
+      <p class="label-b input-label">2つめの数字</p>
+      <p class="label-c input-label">3つめの数字</p>
+      <input type="text" id="numberA" class="number-a input-text" size="4">
+      <input type="text" id="numberB" class="number-b input-text" size="4">
+      <input type="text" id="numberC" class="number-c input-text" size="4">
+    </div>
+    <div class="button-window">
+      <a id="submitButton" class="btn btn-orange btn-box" href="javascript:void(0);">
+        <h2>確かめる</h2>
+      </a>
+    </div>
+    <div class="result-window">
+      <table id="resultTable" class="table">
+        <tr class="table-header">
+          <th width="8%"></th>
+          <th width="50%">３つの数</th>
+          <th width="42%">（＋）/（ー）</th>
+        </tr>
+        <tr class="table-body">
+          <td width="8%">0</td>
+          <td width="50%">2, 4, 6</td>
+          <td width="42%">従っている（＋）</td>
+        </tr>
+      </table>
+    </div>
+    <div class="end-window">
+      <a id="endButton" class="btn btn-blue btn-box" href="">
+        <h2>終了する</h2>
+      </a>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
