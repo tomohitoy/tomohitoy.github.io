@@ -1,0 +1,188 @@
+/* VARIABLES */
+:root {
+  /* JAPANESE COLORS */
+  --geshi-10-base: #AFAFD7;
+  --geshi-10-accent: #DBC3DE;
+  --geshi-10-main: #014C62;
+  --risshu-13-base: #FFF471;
+  --risshu-13-accent: #DFF1F4;
+  --risshu-13-main: #8FBCD6;
+  --shubun-16-base: #D34358;
+  --shubun-16-accent: #F08F68;
+  --shubun-16-main: #D7D56F;
+  --rittou-19-base: #F6EEF2;
+  --rittou-19-accent: #D02F47;
+  --rittou-19-main: #D71070;
+  --touji-22-base: #696C74;
+  --touji-22-accent: #E7E4CC;
+  --touji-22-main: #E7D557;
+  --risshun-1-base: #FADBD9;
+  --risshun-1-accent: #C3BE64;
+  --risshun-1-main: #B67D86;
+  --shumbun-4-base: #64585C;
+  --shumbun-4-accent: #98596E;
+  --shumbun-4-main: #F3AA96;
+  --rikka-7-base: #00AC7A;
+  --rikka-7-accent: #95CFB6;
+  --rikka-7-main: #F6F4D7;
+  /* FONT SIZE*/
+  --ty-p-s-size: calc(0.1cm + (0.4vmax - 0.4vmin)*4);
+  --ty-p-m-size: calc(0.2cm + (0.4vmax - 0.4vmin)*4);
+  --ty-h3-size: calc(0.3cm + (0.6vmax - 0.6vmin)*4);
+  --ty-h2-size: calc(0.4cm + (0.6vmax - 0.6vmin)*4);
+  --ty-h1-size: calc(0.5cm + (0.6vmax - 0.6vmin)*4);
+}
+
+/* BODY LAYOUT */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.p-m {
+  font-size: var(--ty-p-m-size);
+  margin: 0;
+  padding: 0;
+}
+
+.p-s {
+  font-size: var(--ty-p-s-size);
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: var(--ty-h3-size);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: var(--ty-h2-size);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--ty-h1-size);
+  margin: 0;
+  padding: 0;
+}
+
+.wf-sm{
+  font-family: "Sawarabi Mincho";
+}
+
+.tate {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.p-m-body {
+  text-indent: var(--ty-p-m-size);
+}
+
+.p-s-body {
+  text-indent: var(--ty-p-s-size);
+
+}
+
+/* GESHI-ABOUT LAYOUT */
+.geshi-about{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--geshi-10-base);
+  color: var(--geshi-10-main);
+  grid-template-rows: 5vh 30vh 1fr 5vh;
+  grid-template-columns: 5vh 1fr 10vh 20vh 5vh;
+}
+
+.ga-title {
+  vertical-align: center;
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
+
+.ga-desc{
+  vertical-align: top;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+/* TEXT CENTERIZE */
+.text-center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.text-center>h1 {
+  flex: 0 1 100%;
+}
+
+.text-center>h2 {
+  flex: 0 1 100%;
+}
+
+.text-center>h3 {
+  flex: 0 1 100%;
+}
+
+.text-center>.p-m {
+  flex: 0 1 100%;
+}
+
+.text-center>.p-s {
+  flex: 0 1 100%;
+}
+
+
+/* TEXT LEFTIZE */
+
+.text-top {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.text-top>h1 {
+  flex: 0 1 100%;
+}
+
+.text-top>h2 {
+  flex: 0 1 100%;
+}
+
+.text-top>h3 {
+  flex: 0 1 100%;
+}
+
+.text-top>.p-m {
+  flex: 0 1 100%;
+}
+
+.text-top>.p-s {
+  flex: 0 1 100%;
+}
+
+.content-center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.content-center>div{
+  flex: 0 1 100%;
+}
+
+.content-center>a{
+  flex: 0 1 100%;
+}
+
+.content-center>img{
+  flex: 0 1 100%;
+}
+
