@@ -122,6 +122,35 @@
       ],
       "domestic": []
     }
-
+  ],
+  "prizes": [
+    {
+      "area": "PERSONAL PROJECT",
+      "domestic": [
+        {
+          "contest": "未来を変えるデザイン展　Hackathon for Social Change",
+          "title": "日本財団賞",
+          "year": 2013,
+          "month": "7"
+        }
+      ]
+    },
+    {
+      "area": "TEAM MITSUGO",
+      "international": [
+        {
+          "contest": "Singularity University Japan Global Impact Challenge",
+          "title": "2018 Winner",
+          "year": 2018,
+          "month": "Jan"
+        },
+        {
+          "contest": "Open IDEO Early Childhood Innovation Prize New Innovator",
+          "title": "Top Idea",
+          "year": 2018,
+          "month": "May"
+        }
+      ]
+    }
   ]
 }

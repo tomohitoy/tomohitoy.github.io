@@ -37,6 +37,7 @@
       .success(function(data){
         $scope.business = data.business;
         $scope.academic = data.academic;
+        $scope.prizes = data.prizes;
       })
       .error(function(data){
       })

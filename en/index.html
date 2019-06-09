@@ -88,6 +88,20 @@
               </p>
             </div>
           </div>
+          <h3 class="font-en indent-1">PRIZES</h3>
+          <div ng-repeat="prize in prizes">
+            <h3 class="font-en indent-2">{{ prize.area }}</h3>
+            <div class="work" ng-repeat="pr in prize.international">
+              <p class="font-en indent-3">
+                {{ pr.contest }}, {{ pr.title }}, {{ pr.year }}, {{ pr.month }}.
+              </p>
+            </div>
+            <div class="work" ng-repeat="pr in prize.domestic">
+              <p class="font-ja indent-3">
+                {{ pr.contest }}, {{ pr.title }}, {{ pr.year }}年{{ pr.month }}月受賞。
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact" class="center">
