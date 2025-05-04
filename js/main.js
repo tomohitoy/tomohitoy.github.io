@@ -55,7 +55,7 @@ class PortfolioApp {
         
         // Create language links
         const jaLink = document.createElement('a');
-        jaLink.href = `${basePath}`;
+        jaLink.href = `${basePath}index.html`;
         jaLink.textContent = this.content.languageSwitcher.ja;
         if (this.currentLang === 'ja') jaLink.classList.add('active');
         
