@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website featuring Tomohito Yamazaki's profile, activities, and contact information">
-    <title>Tomohito Yamazaki's Portfolio</title>
+    <meta name="description" content="Portfolio website featuring Tomohito Yamazaki's profile, research and educational activities in inquiry-based learning, programming education, cognitive science, and educational technology | Keio University">
+    <meta name="keywords" content="Tomohito Yamazaki, 山﨑智仁, 山崎智仁, Keio University, inquiry-based learning, education, programming education, cognitive science, educational technology, Research-Practitioner">
+    <title>Tomohito Yamazaki | Inquiry-Based Learning, Programming Education & Cognitive Science | Keio University</title>
     
-    <!-- Favicon will be added later -->
-    <!-- <link rel="icon" href="favicon.ico"> -->
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tomohitoy.com/index.en.html">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://tomohitoy.com/index.en.html">
+    <link rel="alternate" hreflang="ja" href="https://tomohitoy.com/index.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tomohitoy.com/index.en.html">
+    <meta property="og:title" content="Tomohito Yamazaki | Inquiry-Based Learning, Programming Education, Cognitive Science and Educational Technology | Keio University">
+    <meta property="og:description" content="Portfolio website featuring Tomohito Yamazaki's profile, research and educational activities in inquiry-based learning, programming education, cognitive science, and educational technology">
+    <meta property="og:image" content="https://tomohitoy.com/img/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tomohitoy.com/index.en.html">
+    <meta property="twitter:title" content="Tomohito Yamazaki | Inquiry-Based Learning, Programming Education, Cognitive Science and Educational Technology | Keio University">
+    <meta property="twitter:description" content="Portfolio website featuring Tomohito Yamazaki's profile, research and educational activities in inquiry-based learning, programming education, cognitive science, and educational technology">
+    <meta property="twitter:image" content="https://tomohitoy.com/img/profile.jpg">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,6 +38,49 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modal.css">
+    
+    <!-- Structured Data - Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tomohito Yamazaki",
+      "alternateName": ["山﨑 智仁", "山崎 智仁"],
+      "jobTitle": "Research-Practitioner",
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Graduate School of Media and Governance, Keio University",
+          "url": "https://www.sfc.keio.ac.jp/en/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Hokkisha Inc.",
+          "url": "https://hokkisha.or.jp/"
+        }
+      ],
+      "url": "https://tomohitoy.com/index.en.html",
+      "image": "https://tomohitoy.com/img/profile.jpg",
+      "description": "A Research-Practitioner building theories and systems while teaching in alternative schools.",
+      "knowsAbout": ["Educational Technology", "Cognitive Science", "Inquiry-Based Learning", "Programming Education", "Data Analysis"]
+    }
+    </script>
+    
+    <!-- Structured Data - Professional Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Tomohito Yamazaki Consulting & Advisory",
+      "description": "Advisory services for inquiry-based learning, PBL, and ICT implementation in educational settings; business data analysis consulting",
+      "url": "https://tomohitoy.com/index.en.html",
+      "serviceType": ["Educational Advisory", "Data Analysis Consulting", "System Development"],
+      "provider": {
+        "@type": "Person",
+        "name": "Tomohito Yamazaki"
+      }
+    }
+    </script>
 </head>
 <body class="en">
     <!-- Language Switcher -->
@@ -37,7 +102,7 @@
             
             <!-- Profile Image Card -->
             <div class="card card-profile-image card-image" data-card="image">
-                <img src="img/profile.jpg" alt="Tomohito Yamazaki">
+                <img src="img/profile.jpg" alt="Tomohito Yamazaki - Research-Practitioner at Keio University, specialist in inquiry-based learning, programming education, and cognitive science">
             </div>
             
             <!-- Contact Card -->
