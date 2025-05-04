@@ -310,12 +310,12 @@ const siteContent = {
                 summary: "Teaches STEAM to students from elementary to university students."
             },
             advisory: {
-                title: "Advisory",
+                title: "School Advisory",
                 subtitle: "Educational Support",
                 summary: "Provides inquiry-based learning and digitalization training and support."
             },
             consulting: {
-                title: "Consulting",
+                title: "Business Consulting",
                 subtitle: "Data Analysis",
                 summary: "Analyzes business data to problem identification and solutions."
             },
@@ -413,7 +413,7 @@ const siteContent = {
                 `
             },
             advisory: {
-                title: "Advisory",
+                title: "School Advisory",
                 content: `
                     <h3>Provides inquiry-based learning and digitalization training and support.</h3>
                     <p>I provide training to introduce methodology for planning, implementing, and evaluating inquiry-based learning and project-based learning in school settings.</p>
@@ -450,7 +450,7 @@ const siteContent = {
                 `
             },
             consulting: {
-                title: "Consulting",
+                title: "Business Consulting",
                 content: `
                     <h3>Analyzes business data to problem identification and solutions.</h3>
                     
@@ -545,9 +545,9 @@ const siteContent = {
                         <li>Kawabata I, Ii Y, Yamamoto Y, Yamazaki T, Fujimoto Y (2015) PSY11. The actual clinical use of Antifungal Drugs in Patients who received Hematopoietic Stem Cell Transplantation in Japan: a retrospective database study, Value in Health , Volume 18 , Issue 3 , A293</li>
                     </ul>
                     
-                    <h3>Invited Lectures</h3>
+                    <h3>Invited Talks</h3>
                     <ul>
-                        <li>November 30, 2019: "Inquiry Learning Born from QuickClick: Future Classroom in Tomorrow's Classroom," invited lecture at "Tomorrow's Classroom Special Session: ICT Utilization Practices in Kansai Private Schools," Kyoto Tachibana University</li>
+                        <li>November 30, 2019: "Generating Creative Learning with QuickClick" -How to generate the creative learning from experiential learning to apply the information technology into classroom, in Japanese "QuickClickで生まれる探究する学び", Invited Talk Presented at “未来の教室 in 明日の教室”, supported by Ministry of Economy, Trade and Industry, Kyoto, November 30, 2019.</li>
                         <li>October 14, 2022: "So You Think You Can't Innovate? Think Again: bridge learning 'Connecting Teachers by Building Community of Learner-Centered Practice'," at Labuan Matriculation College, Malaysia</li>
                     </ul>
                     
