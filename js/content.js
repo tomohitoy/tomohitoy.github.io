@@ -26,13 +26,13 @@ const siteContent = {
                 summary: "小学校から大学まで、幅広くプログラミング教育や探究型の学習を実践しています。"
             },
             advisory: {
-                title: "アドバイザリー",
-                subtitle: "Advisory",
+                title: "学校アドバイザリー",
+                subtitle: "School Advisory",
                 summary: "教育現場での探究型学習やPBL、ICT活用を支援します。"
             },
             consulting: {
                 title: "コンサルティング",
-                subtitle: "Consulting",
+                subtitle: "Business Consulting",
                 summary: "ビジネスデータを統計的に分析し、課題発見・解決を支援します。"
             },
             software: {
