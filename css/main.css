@@ -1,0 +1,435 @@
+/* Main CSS for Tomohito Yamazaki's Portfolio Website */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    /* Colors */
+    --primary: #4CAF50;
+    --secondary: #8BC34A;
+    --accent: #009688;
+    --text: #333333;
+    --light-text: #666666;
+    --dark-text-on-light: #333333;
+    --light-text-on-dark: #FFFFFF;
+    --background: #F5F5F5;
+    --card-bg: #FFFFFF;
+    --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+    /* Card Categories */
+    --academic-color: #4CAF50;    /* Green for academic */
+    --professional-color: #009688; /* Teal for professional */
+    
+    /* Fonts */
+    --heading-font-en: 'Roboto', sans-serif;
+    --heading-font-jp: 'Noto Sans JP', sans-serif;
+    --body-font-en: 'Open Sans', sans-serif;
+    --body-font-jp: 'Noto Sans JP', sans-serif;
+    
+    /* Spacing */
+    --container-padding: 2rem;
+    --grid-gap: 1rem;
+    --card-padding: 1.5rem;
+}
+
+/* Base Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--body-font-en);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Language specific styles */
+.ja {
+    font-family: var(--body-font-jp);
+}
+
+.en {
+    font-family: var(--body-font-en);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-en);
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.ja h1, 
+.ja h2, 
+.ja h3, 
+.ja h4, 
+.ja h5, 
+.ja h6 {
+    font-family: var(--heading-font-jp);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.language-switcher a {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.language-switcher a:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Bento Grid Layout */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: var(--grid-gap);
+    grid-auto-flow: dense;
+    margin: 0 auto;
+    max-width: 1400px;
+    grid-template-areas:
+        "profile profile profile image"
+        "activity1 activity2 activity3 activity4"
+        "activity5 contact contact contact";
+}
+
+/* Card Groups */
+.academic-card {
+    border-left: 4px solid var(--academic-color);
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.professional-card {
+    border-left: 4px solid var(--professional-color);
+    background-color: rgba(0, 150, 136, 0.1);
+}
+
+/* Card Sizes */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: var(--card-padding);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: var(--hover-shadow);
+}
+/* Card sizing for square cards */
+.activity-card {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure all cards in PC layout maintain proper square aspect ratio */
+@media (min-width: 577px) {
+    .activity-card,
+    .card-contact {
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+}
+/* Profile area cards */
+.card-profile {
+    grid-area: profile;
+    height: 100%; /* Let it take the natural height */
+}
+
+.card-contact {
+    grid-area: contact;
+    aspect-ratio: 3/1; /* Wide but not too tall */
+    height: auto;
+}
+
+.card-profile-image {
+    grid-area: image;
+    aspect-ratio: 1/1; /* Square */
+    padding: 0;
+    width: auto; /* Auto width */
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+}
+
+/* Activity cards with area assignments */
+.card-teaching {
+    grid-area: activity1;
+}
+
+.card-research {
+    grid-area: activity2;
+}
+
+.card-advisory {
+    grid-area: activity3;
+}
+
+.card-consulting {
+    grid-area: activity4;
+}
+
+.card-software {
+    grid-area: activity5;
+}
+
+.card-placeholder {
+    grid-area: activity6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 0.1);
+    font-size: 2rem;
+    color: var(--light-text);
+}
+
+.card-placeholder i {
+    font-size: 3rem;
+    opacity: 0.5;
+}
+
+/* Card Content */
+.card-header {
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    text-align: center;
+}
+
+/* Specific Cards */
+.card-profile {
+    background-color: var(--academic-color);
+    color: var(--light-text-on-dark);
+}
+
+.card-profile .card-title {
+    color: var(--light-text-on-dark);
+    font-size: 1.5rem;
+}
+
+.card-profile .card-subtitle {
+    color: var(--light-text-on-dark);
+    opacity: 0.9;
+}
+
+.card-image {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Group cards by category */
+.card-research,
+.card-teaching {
+    background-color: rgba(76, 175, 80, 0.1); /* Light academic color */
+    border-left: 4px solid var(--academic-color);
+}
+
+.card-advisory,
+.card-consulting,
+.card-software {
+    background-color: rgba(0, 150, 136, 0.1); /* Light professional color */
+    border-left: 4px solid var(--professional-color);
+}
+
+.card-contact {
+    background-color: var(--accent);
+    color: var(--light-text-on-dark);
+}
+
+.card-contact .card-title {
+    color: var(--light-text-on-dark);
+}
+
+.card-contact .card-subtitle {
+    color: var(--light-text-on-dark);
+    opacity: 0.9;
+}
+
+.card-contact .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card-contact .social-links a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.card-contact .social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+/* Responsive Layouts */
+
+/* Responsive Layouts */
+
+/* Large desktops - default layout already defined in the main grid */
+
+/* Medium screens/tablets */
+/* Medium screens/tablets */
+@media (max-width: 1200px) and (min-width: 769px) {
+    .bento-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "profile profile profile image"
+            "activity1 activity2 activity3 activity4"
+            "activity5 contact contact contact";
+        gap: 12px;
+    }
+    
+    .card-profile-image {
+        aspect-ratio: 1/1;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+/* Small tablets */
+@media (max-width: 768px) {
+    .card {
+        padding: 16px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        font-size: 0.95rem;
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two column layout for mobile */
+        grid-template-areas:
+            "profile image"
+            "activity1 activity2"
+            "activity3 activity4"
+            "activity5 contact";
+        gap: 10px;
+    }
+    
+    /* Make all elements square */
+    .card {
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+    
+    /* Profile card takes full width but maintains aspect ratio */
+    .card-profile {
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+    
+    .card-profile-image {
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+    
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        padding: 12px;
+    }
+    
+    .card-body {
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .card-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Ensure all activity cards are proper squares */
+    .activity-card {
+        aspect-ratio: 1/1;
+        min-height: 160px;
+    }
+}

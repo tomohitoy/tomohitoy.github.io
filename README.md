@@ -1,2 +1,1 @@
-# tomohitoy.github.io
-Tomohito Yamazaki's website
+# Tomohito Yamazaki's website

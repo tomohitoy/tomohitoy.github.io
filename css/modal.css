@@ -1,0 +1,133 @@
+/* Modal Dialog Styles */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 2rem;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-container {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-close:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.modal-content {
+    margin-bottom: 1.5rem;
+}
+
+.modal-content h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.modal-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.modal-content ul, 
+.modal-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-content ul li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.modal-content ol li {
+    list-style-type: decimal;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Language-specific adjustments */
+.ja .modal-header h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.ja .modal-content {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-container {
+        padding: 1.5rem;
+        width: 95%;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.1rem;
+    }
+}
