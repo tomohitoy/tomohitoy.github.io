@@ -109,19 +109,19 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1400px;
     grid-template-areas:
         "profile profile profile image"
-        "activity1 activity2 activity3 activity4"
-        "activity5 contact contact contact";
+        "whatsnew activity1 activity2 awards"
+        "activity3 activity4 activity5 contact";
 }
 
 /* Card Groups */
 .academic-card {
     border-left: 4px solid var(--academic-color);
-    background-color: rgba(76, 175, 80, 0.1);
+    background-color: rgba(76, 175, 80, 0.1) !important;
 }
 
 .professional-card {
     border-left: 4px solid var(--professional-color);
-    background-color: rgba(0, 150, 136, 0.1);
+    background-color: rgba(0, 150, 136, 0.1) !important;
 }
 
 /* Card Sizes */
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-contact {
     grid-area: contact;
-    aspect-ratio: 3/1; /* Wide but not too tall */
+    aspect-ratio: 1/1; /* Square aspect ratio */
     height: auto;
 }
 
@@ -180,12 +180,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Activity cards with area assignments */
+.card-whats-new {
+    grid-area: whatsnew;
+    background-color: #ffffff !important;
+    border-left: 4px solid #FF9800;
+}
+
 .card-teaching {
     grid-area: activity1;
 }
 
 .card-research {
     grid-area: activity2;
+}
+
+.card-awards {
+    grid-area: awards;
 }
 
 .card-advisory {
@@ -376,11 +386,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile phones */
 @media (max-width: 576px) {
     .bento-grid {
-        grid-template-columns: 1fr 1fr; /* One column layout for mobile */
+        grid-template-columns: 1fr 1fr; /* Two column layout for mobile */
         grid-template-areas:
             "profile profile"
-            "image activity1"
-            "activity2 activity3"
+            "image whatsnew"
+            "activity1 activity2"
+            "awards activity3"
             "activity4 activity5"
             "contact contact";
         gap: 10px;
@@ -414,8 +425,21 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 12px;
     }
 
+    .card-consulting {
+        aspect-ratio: 1/1; /* Square like other cards */
+        width: 100%;
+        height: auto;
+    }
+
+    .card-software {
+        aspect-ratio: 1/1; /* Square like other cards */
+        width: 100%;
+        height: auto;
+    }
+
     .card-contact {
-        aspect-ratio: auto;;
+        grid-column: 1 / -1; /* Span both columns */
+        aspect-ratio: 3/1;
         width: 100%;
         height: auto;
     }

@@ -8,7 +8,7 @@ const siteContent = {
     ja: {
         meta: {
             title: "山﨑 智仁 | Tomohito Yamazaki | Research-Practitioner",
-            description: "山﨑 智仁 (やまざき ともひと)のプロフィール、活動内容、連絡先をまとめたポートフォリオサイト"
+            description: "山﨑 智仁 (やまざき ともひと)のプロフィール，活動内容，連絡先をまとめたポートフォリオサイト"
         },
         languageSwitcher: {
             en: "English",
@@ -18,32 +18,42 @@ const siteContent = {
             profile: {
                 title: "山﨑 智仁",
                 subtitle: "Tomohito Yamazaki",
-                summary: "オルタナティブな教育の現場で実践しながら理論とシステムを構築する、研究的実践家（Research-Practitioner）です。"
+                summary: "オルタナティブな教育の現場で実践しながら理論とシステムを構築する，研究的実践家（Research-Practitioner）です．"
+            },
+            whatsNew: {
+                title: "新着ニュース",
+                subtitle: "What's New",
+                summary: "最新の活動や業績についてお知らせします．"
             },
             teaching: {
                 title: "担当講義・授業",
                 subtitle: "Teaching",
-                summary: "小学校から大学まで、幅広くプログラミング教育や探究型の学習を実践しています。"
+                summary: "小学校から大学まで，幅広くプログラミング教育や探究型の学習を実践しています．"
             },
             advisory: {
                 title: "学校アドバイザリー",
                 subtitle: "School Advisory",
-                summary: "教育現場での探究型学習やPBL、ICT活用を支援します。"
+                summary: "教育現場での探究型学習やPBL，ICT活用を支援します．"
             },
             consulting: {
                 title: "コンサルティング",
                 subtitle: "Business Consulting",
-                summary: "ビジネスデータを統計的に分析し、課題発見・解決を支援します。"
+                summary: "ビジネスデータを統計的に分析し，課題発見・解決を支援します．"
             },
             software: {
                 title: "ソフトウェア開発",
                 subtitle: "Software Development",
-                summary: "ユーザー体験に配慮したデータ収集・活用システムを構築・実装します。"
+                summary: "ユーザー体験に配慮したデータ収集・活用システムを構築・実装します．"
             },
             research: {
                 title: "研究",
                 subtitle: "Research",
-                summary: "学習者の認知プロセスやメタ認知を、データと記述の両側面で研究しています。"
+                summary: "学習者の認知プロセスやメタ認知を，データと記述の両側面で研究しています．"
+            },
+            awards: {
+                title: "受賞・特許商標",
+                subtitle: "Awards & Patents",
+                summary: "これまでの活動のなかで頂いた賞や特許・商標です．"
             },
             contact: {
                 title: "連絡先",
@@ -52,10 +62,21 @@ const siteContent = {
             }
         },
         modals: {
+            whatsNew: {
+                title: "新着情報",
+                content: `
+                    <h3>最新の活動や業績についてお知らせします．</h3>
+                    
+                    <ul>
+                        <li><strong>2025年9月10日</strong> 開発中の数の概念を学ぶゲーム「だいたい算」の登録商標を取得しました．詳細は一般社団法人発起社の<a href="http://hokkisha.or.jp/news/2025/09/10/" target="_blank" rel="noopener noreferrer">ニュースリリース</a>をご覧ください．</li>
+                        <li><strong>2025年6月15日</strong> 2025年11月に広島で開催される授業研究の国際学会 WALS2025 (World Association of Lesson and Learning Studies) にて，ヒロック初等部での理科の探究型学習で行われている足場かけについて口頭発表を行います．発表タイトルは "Opening the Door to Science: Designing Activities and Scaffolding Questions for Inquiry-Based Science Learning in Primary Micro-Schools" です．</li>
+                    </ul>
+                `
+            },
             profile: {
                 title: "プロフィール",
                 content: `
-                    <h3>オルタナティブな教育の現場で実践しながら理論とシステムを構築する、研究的実践家（Research-Practitioner）です。</h3>
+                    <h3>オルタナティブな教育の現場で実践しながら理論とシステムを構築する，研究的実践家（Research-Practitioner）です．</h3>
                     
                     <h3>所属</h3>
                     <ul>
@@ -63,9 +84,8 @@ const siteContent = {
                         <li>慶應義塾大学大学院政策・メディア研究科 後期博士課程</li>
                         <li>早稲田大学人間科学部 教育コーチ</li>
                         <li>拓殖大学工学部 非常勤講師</li>
-                        <li>ヒロック初等部・中等部</li>
-                        <li>東京コミュニティスクール初等部 非常勤教育スタッフ</li>
-                        <li>一般社団法人 FutureEdu 理事</li>
+                        <li>ヒロック初等・中等部 運営チーム リサーチャー</li>
+                        <li>特定非営利活動法人東京コミュニティスクール初等部 非常勤教育スタッフ</li>
                         <li>Google for Education 認定イノベーター（#JPN19）</li>
                     </ul>
                     
@@ -78,14 +98,15 @@ const siteContent = {
                         <li>2022年9月 慶應義塾大学大学院政策・メディア研究科 後期博士課程 入学</li>
                         <li>2023年9月~ 早稲田大学人間科学部(通信課程) 教育コーチ</li>
                         <li>2024年9月~ 拓殖大学工学部 非常勤講師</li>
-                        <li>2025年4月~ ヒロック初等部・中等部</li>
+                        <li>2024年9月~ 特定非営利活動法人東京コミュニティスクール初等部 非常勤教育スタッフ</li>
+                        <li>2025年4月~ ヒロック初等・中等部 運営チーム リサーチャー</li>
                     </ul>
                 `
             },
             teaching: {
                 title: "担当講義・授業",
                 content: `
-                    <h3>小学校から大学まで、幅広くプログラミング教育や探究型の学習を実践しています。</h3>
+                    <h3>小学校から大学まで，幅広くプログラミング教育や探究型の学習を実践しています．</h3>
                     
                     <h3>拓殖大学工学部</h3>
                     <ul>
@@ -132,13 +153,13 @@ const siteContent = {
             advisory: {
                 title: "学校アドバイザリー",
                 content: `
-                    <h3>教育現場での探究型学習やPBL、ICT活用を支援します。</h3>
-                    <p>まず、学校現場での探究型学習やプロジェクト型学習のプランニング・実践・評価の方法論をご紹介する研修をしています。</p>
-                    <p>さらに、研修のみならず、先生方と一緒にプランを組み立て、実践期間中のサポートやフィードバック、振り返りによる現状把握と課題発見までご一緒し、探究する学びの文化醸成をお手伝いしています。</p>
+                    <h3>教育現場での探究型学習やPBL，ICT活用を支援します．</h3>
+                    <p>まず，学校現場での探究型学習やプロジェクト型学習のプランニング・実践・評価の方法論をご紹介する研修をしています．</p>
+                    <p>さらに，研修のみならず，先生方と一緒にプランを組み立て，実践期間中のサポートやフィードバック，振り返りによる現状把握と課題発見までご一緒し，探究する学びの文化醸成をお手伝いしています．</p>
                     
                     <h3>学校のアドバイザリー</h3>
                     <ul>
-                        <li>2023年3月~ ソライスクール、キッズドームソライ学童で実践しているプロジェクト型学習・マイプロジェクトのアドバイザー @株式会社SHONAI</li>
+                        <li>2023年3月~ ソライスクール，キッズドームソライ学童で実践しているプロジェクト型学習・マイプロジェクトのアドバイザー @株式会社SHONAI</li>
                         <li>2023年7月~ 探究テーマ学習のアドバイザー @ヒロック初等部・中等部</li>
                         <li>2024年6月 高専生・講師のイノベーションプロジェクトの外部評価者 @Labuan Matriculation College</li>
                         <li>2025年4月 高専生・講師のイノベーションプロジェクトの外部評価者 @Labuan Matriculation College</li>
@@ -146,13 +167,13 @@ const siteContent = {
                     
                     <h3>学校・先生のための研修</h3>
                     <ul>
-                        <li>2019年6月16日および6月30日 教員向けプログラミング的思考ワークショップ『プログラミングは，ことば。』 @東京コミュニティスクール</li>
-                        <li>2020年2月16日, 2020年6月13日, 2023年2月25日, 2023年6月17日 挑戦を後押しする関わり方を学ぶための大人向けワークショップ『挑学のすすめ』 @東京コミュニティスクール</li>
-                        <li>2021年7月28日 プロジェクト型学習の研修 @和光中学校</li>
-                        <li>2022年4月22日 教員向けインプロワークショップ @三田国際学園中学校</li>
+                        <li><a href="https://tokyocs.org/5322" target="_blank" rel="noopener noreferrer">2019年6月16日および6月30日</a> 教員向けプログラミング的思考ワークショップ『プログラミングは，ことば．』 @東京コミュニティスクール</li>
+                        <li><a href="https://tokyocs.org/7293" target="_blank" rel="noopener noreferrer">2020年2月16日</a>, <a href="https://tokyocs.org/7595" target="_blank" rel="noopener noreferrer">2020年6月13日</a>, <a href="https://tokyocs.org/11169" target="_blank" rel="noopener noreferrer">2023年2月25日</a>, <a href="https://tokyocs.org/11796" target="_blank" rel="noopener noreferrer">2023年6月17日</a> 挑戦を後押しする関わり方を学ぶための大人向けワークショップ『挑学のすすめ』 @東京コミュニティスクール</li>
+                        <li>2020年9月~2023年1月 ブリッジラーニング：学習者中心の学びを実践するための，(1)児童生徒への理解を深め，(2)プロジェクト型学習をデザインする研修シリーズと学校の先生のためのオンラインコミュニティ</li>
+                        <li>2021年7月28日 プロジェクト型学習の研修 @私立和光中学校</li>
                         <li>2023年9月8日 スーパーサイエンスハイスクール（ＳＳＨ）科学的探究クラスの科学教育・統計教育の研修 @神奈川県立平塚江南高校</li>
-                        <li>2024年8月9日 「探究する学び」研修：探究型学習、ワールドオリエンテーションのプランニング・実践・評価を学ぶ @イエナプランスクール</li>
-                        <li>2020年9月~2023年1月 ブリッジラーニング：学習者中心の学びを実践するための、(1)児童生徒への理解を深め、(2)プロジェクト型学習をデザインする研修シリーズと学校の先生のためのオンラインコミュニティ</li>
+                        <li>2024年8月9日，2025年3月26日，2025年5月14日，2025年8月1日 探究型学習の研修 @公立オルタナティブスクール</li>
+                        <li>2025年8月30日，2025年9月17日，2025年10月7日 PBLアドバイザー @福山暁の星女子中学校・高等学校</li>
                     </ul>
                     
                     <h3>一般・子ども向けのワークショップ</h3>
@@ -160,14 +181,14 @@ const siteContent = {
                         <li>2017年3月16日 『Minecraft(マイクラ)と Codemonkey でマイ公園・プログラミング・パーク』 @CEPiC・トレッサ横浜</li>
                         <li>2017年5月5日,6日 『「ことば」としてのプログラミング』 @白金台パソコンスクール</li>
                         <li>2017年12月9日 『速習　無料アプリを使ったホームページ作成講座』 @白金台パソコンスクール</li>
-                        <li>2022年5月11日 生徒向けインプロワークショップ @三田国際学園中学校</li>
+                        <li>2022年4月22日,5月11日 教員向け研修および，生徒向けインプロワークショップ @三田国際学園</li>
                     </ul>
                 `
             },
             consulting: {
                 title: "コンサルティング",
                 content: `
-                    <h3>様々な大企業さまのビジネスデータを解析し、課題発見・解決策を支援するコンサルティングをしています。</h3>
+                    <h3>様々な大企業さまのビジネスデータを解析し，課題発見・解決策を支援するコンサルティングをしています．</h3>
                     
                     <ul>
                         <li>調査設計・統計解析・レポーティングまでの一気通貫コンサルティング</li>
@@ -198,8 +219,8 @@ const siteContent = {
             software: {
                 title: "ソフトウェア開発",
                 content: `
-                    <h3>ユーザー体験に配慮したデータ収集・活用システム構築をしています。</h3>
-                    <p>フロントエンドからバックエンドまで、一気通貫のシステム実装を得意としています。</p>
+                    <h3>ユーザー体験に配慮したデータ収集・活用システム構築をしています．</h3>
+                    <p>フロントエンドからバックエンドまで，一気通貫のシステム実装を得意としています．</p>
                     
                     <ul>
                         <li>データベース・バックエンドサーバーの設計・構築（BaaS: Firebase, IaaS: Google Cloud Platform, Amazon Web Service を利用）</li>
@@ -211,13 +232,13 @@ const siteContent = {
                     <ul>
                         <li>コンピューターベースドテスト（CBT）プラットフォーム「たつじんテストICT」の開発
                             <ul>
-                                <li>小中学生の回答ログを分析し、認知・メタ認知の診断的評価をするためのシステム</li>
+                                <li>小中学生の回答ログを分析し，認知・メタ認知の診断的評価をするためのシステム</li>
                             </ul>
                         </li>
-                        <li>児童生徒が登校したクイズで大会を開く、クイズ大会アプリケーションQuickClickの開発・実装
+                        <li>児童生徒が登校したクイズで大会を開く，クイズ大会アプリケーションQuickClickの開発・実装
                             <ul>
-                                <li>クイズを作って学ぶ教育アプリケーションの開発。</li>
-                                <li>文部科学省　平成28年度「少子化・人口減少社会に対応した活力ある学校教育推進事業」、野洲市教育委員会（滋賀県）にて実施された遠隔教育プログラムで採用された。</li>
+                                <li>クイズを作って学ぶ教育アプリケーションの開発．</li>
+                                <li>文部科学省　平成28年度「少子化・人口減少社会に対応した活力ある学校教育推進事業」，野洲市教育委員会（滋賀県）にて実施された遠隔教育プログラムで採用された．</li>
                             </ul>
                         </li>
                         <li>早稲田大学知覚情報システム研究所　研究支援アプリケーションの開発
@@ -237,9 +258,9 @@ const siteContent = {
             research: {
                 title: "研究",
                 content: `
-                    <h3>学習者の認知プロセスやメタ認知を、データと記述の両側面で研究しています。</h3>
-                    <p>実証的研究：CBTプラットフォームを開発し、教育データマイニングによって、認知プロセスとメタ認知の研究をしています。</p>
-                    <p>仮説生成的研究：教育現場でのアクションリサーチやエスノグラフィー、構成主義的グラウンデッド・セオリーなどで、教師と児童生徒の関わりを研究しています。</p>
+                    <h3>学習者の認知プロセスやメタ認知を，データと記述の両側面で研究しています．</h3>
+                    <p>実証的研究：CBTプラットフォームを開発し，教育データマイニングによって，認知プロセスとメタ認知の研究をしています．</p>
+                    <p>仮説生成的研究：教育現場でのアクションリサーチやエスノグラフィー，構成主義的グラウンデッド・セオリーなどで，教師と児童生徒の関わりを研究しています．</p>
                     
                     <h3>児童生徒の認知プロセスとメタ認知</h3>
                     <ul>
@@ -249,6 +270,7 @@ const siteContent = {
                     
                     <h3>教師と児童生徒の関わり</h3>
                     <ul>
+                        <li>Yamazaki, T. (2025), Opening the Door to Science: Designing Activities and Scaffolding Questions for Inquiry-Based Science Learning in Primary Micro-Schools, Oral presentation at World Association of Lesson and Learning Studies (WALS2025), Hiroshima, Japan, Nov. 2025.</li>
                         <li>Iba T, Ichikawa C, Sakamoto M, Yamazaki T (2011), Pedagogical Patterns for Creative Learning, Paper Presented at 18th Conference on Pattern Language of Programs, Portland(OR, US), Oct., 2011</li>
                     </ul>
                     
@@ -265,6 +287,12 @@ const siteContent = {
                         <li>2019年11月30日 QuickClickで生まれる探究する学び　未来の教室 in 明日の教室，『明日の教室 特別セッション 関西私立校のICT活用実践』にて招待講演　京都橘大学</li>
                         <li>2022年10月14日 So You Think You Can't Innovate? Think Again: bridge learning "Connecting Teachers by Building Community of Learner-Centered Practice", at Labuan Matriculation College, Malaysia, Oct. 14th 2022</li>
                     </ul>
+                `
+            },
+            awards: {
+                title: "受賞・特許商標",
+                content: `
+                    <h3>これまでの活動のなかで頂いた賞や特許・商標です．</h3>
                     
                     <h3>受賞歴</h3>
                     <ul>
@@ -273,12 +301,17 @@ const siteContent = {
                         <li>2018年5⽉ OpenIDEO Early Childhood Innovation Prize, New Innovator, Top Idea</li>
                         <li>2018年8⽉ ズッコケ三人組40周年同窓会 ビブリオバトル 2018 ファンクラブ会長賞</li>
                     </ul>
+                    
+                    <h3>特許・商標</h3>
+                    <ul>
+                        <li>2025年9月10日 「だいたい算」登録商標 第6966525号</li>
+                    </ul>
                 `
             },
             contact: {
                 title: "連絡先",
                 content: `
-                    <p>お問い合わせは以下のアドレスにお願い致します。</p>
+                    <p>お問い合わせは以下のアドレスにお願い致します．</p>
                     <p>Email: <a href="mailto:yamazaki@hokkisha.or.jp">yamazaki@hokkisha.or.jp</a></p>
                 `
             }
@@ -303,6 +336,11 @@ const siteContent = {
                 title: "Tomohito Yamazaki",
                 subtitle: "",
                 summary: "A Research-Practitioner building theories and systems in alternative schools."
+            },
+            whatsNew: {
+                title: "What's New",
+                subtitle: "Latest Updates",
+                summary: "Stay updated with the latest activities and achievements."
             },
             teaching: {
                 title: "Teaching",
@@ -329,6 +367,11 @@ const siteContent = {
                 subtitle: "Academic Work",
                 summary: "Researches human learning from both data-driven and descriptive approaches."
             },
+            awards: {
+                title: "Awards & Trademarks",
+                subtitle: "Achievements",
+                summary: "Awards and trademarks received through various activities."
+            },
             contact: {
                 title: "Contact",
                 subtitle: "Get in Touch",
@@ -336,6 +379,17 @@ const siteContent = {
             }
         },
         modals: {
+            whatsNew: {
+                title: "What's New",
+                content: `
+                    <h3>Stay updated with the latest activities and achievements.</h3>
+                    
+                    <ul>
+                        <li><strong>September 10, 2025</strong> Obtained a registered trademark for "Daitaisan," a game for learning numerical concepts under development. For details, please see the <a href="http://hokkisha.or.jp/news/2025/09/10/" target="_blank" rel="noopener noreferrer">news release</a> from Hokkisha Inc.</li>
+                        <li><strong>June 15, 2025</strong> Will present at WALS2025 (World Association of Lesson and Learning Studies), an international conference on lesson study to be held in Hiroshima in November 2025. The presentation will discuss scaffolding in inquiry-based science learning at Hillock Primary School. The presentation title is "Opening the Door to Science: Designing Activities and Scaffolding Questions for Inquiry-Based Science Learning in Primary Micro-Schools."</li>
+                    </ul>
+                `
+            },
             profile: {
                 title: "Profile",
                 content: `
@@ -347,8 +401,8 @@ const siteContent = {
                         <li>Doctoral Student, Graduate School of Media and Governance, Keio University</li>
                         <li>Educational Coach, School of Human Sciences, Waseda University</li>
                         <li>Part-time Lecturer, Faculty of Engineering, Takushoku University</li>
-                        <li>Researcher, Hillock Primary and Secondary School</li>
-                        <li>Part-time Teacher, Tokyo Community School</li>
+                        <li>Researcher, Operations Team, Hillock Primary and Secondary School</li>
+                        <li>Part-time Educational Staff, Tokyo Community School Elementary Division NPO</li>
                         <li>Google for Education Certified Innovator (#JPN19)</li>
                     </ul>
                     
@@ -361,7 +415,8 @@ const siteContent = {
                         <li>September 2022: Entered Doctoral Program, Graduate School of Media and Governance, Keio University</li>
                         <li>September 2023 - Present: Educational Coach, School of Human Sciences (Correspondence Course), Waseda University</li>
                         <li>September 2024 - Present: Part-time Lecturer, Faculty of Engineering, Takushoku University</li>
-                        <li>April 2025 - Present: Hillock Primary and Secondary School</li>
+                        <li>September 2024 - Present: Part-time Educational Staff, Tokyo Community School Elementary Division NPO</li>
+                        <li>April 2025 - Present: Researcher, Operations Team, Hillock Primary and Secondary School</li>
                     </ul>
                 `
             },
@@ -430,13 +485,13 @@ const siteContent = {
                     
                     <h3>Training for Schools and Teachers</h3>
                     <ul>
-                        <li>June 16 and 30, 2019: Workshop for teachers on computational thinking "Programming is Language." @Tokyo Community School</li>
-                        <li>February 16, 2020, June 13, 2020, February 25, 2023, June 17, 2023: Workshop for adults to learn how to support challenges "Encouragement of Challenge Learning" @Tokyo Community School</li>
-                        <li>July 28, 2021: Project-based learning training @Wako Junior High School</li>
-                        <li>May 11, 2022: Improvisation workshop for teachers@Mita International Junior High School</li>
-                        <li>September 8, 2023: Super Science High School (SSH) scientific inquiry class science education and statistics education training @Kanagawa Prefectural Hiratsuka Konan High School</li>
-                        <li>August 9, 2024: Planning, process, and evaluation of inquiry-based learning @Alternative School</li>
+                        <li><a href="https://tokyocs.org/5322" target="_blank" rel="noopener noreferrer">June 16 and 30, 2019</a>: Workshop for teachers on computational thinking "Programming is Language." @Tokyo Community School</li>
+                        <li><a href="https://tokyocs.org/7293" target="_blank" rel="noopener noreferrer">February 16, 2020</a>, <a href="https://tokyocs.org/7595" target="_blank" rel="noopener noreferrer">June 13, 2020</a>, <a href="https://tokyocs.org/11169" target="_blank" rel="noopener noreferrer">February 25, 2023</a>, <a href="https://tokyocs.org/11796" target="_blank" rel="noopener noreferrer">June 17, 2023</a>: Workshop for adults to learn how to support challenges "Encouragement of Challenge Learning" @Tokyo Community School</li>
                         <li>September 2020 - January 2023: bridge learning: A training series and online community for school teachers to (1) deepen understanding of students and (2) design project-based learning with the learner-centered approach</li>
+                        <li>July 28, 2021: Project-based learning training @Wako Private Junior High School</li>
+                        <li>September 8, 2023: Super Science High School (SSH) scientific inquiry class science education and statistics education training @Kanagawa Prefectural Hiratsuka Konan High School</li>
+                        <li>August 9, 2024, March 26, 2025, May 14, 2025, August 1, 2025: Inquiry-based learning training @Public Alternative School</li>
+                        <li>August 30, 2025, September 17, 2025, October 7, 2025: PBL Advisory @Fukuyama Akenohoshi Girls' Junior and Senior High School</li>
                     </ul>
                     
                     <h3>Workshops for the General Public and Children</h3>
@@ -444,8 +499,7 @@ const siteContent = {
                         <li>March 16, 2017: "My Park Programming Park with Minecraft and Codemonkey" @CEPiC/Tressa Yokohama</li>
                         <li>May 5-6, 2017: "Programming as 'Language'" @Shirokane-dai Computer School</li>
                         <li>December 9, 2017: "Quick Course on Creating Homepages Using Free Apps" @Shirokane-dai Computer School</li>
-                        <li>April 22, 2022: Training for teachers @Mita International School</li>
-                        <li>May 11, 2022: Improv workshop for students @Mita International School</li>
+                        <li>April 22 and May 11, 2022: Training for teachers and improv workshop for students @Mita International School</li>
                     </ul>
                 `
             },
@@ -534,6 +588,7 @@ const siteContent = {
                     
                     <h3>Teacher-Student Interactions</h3>
                     <ul>
+                        <li>Yamazaki, T. (2025), Opening the Door to Science: Designing Activities and Scaffolding Questions for Inquiry-Based Science Learning in Primary Micro-Schools, Oral presentation at World Association of Lesson and Learning Studies (WALS2025), Hiroshima, Japan, Nov. 2025.</li>
                         <li>Iba T, Ichikawa C, Sakamoto M, Yamazaki T (2011), Pedagogical Patterns for Creative Learning, Paper Presented at 18th Conference on Pattern Language of Programs, Portland(OR, US), Oct., 2011</li>
                     </ul>
                     
@@ -557,6 +612,30 @@ const siteContent = {
                         <li>January 2018: Singularity University Japan Global Impact Challenge, 2018 Winner</li>
                         <li>May 2018: OpenIDEO Early Childhood Innovation Prize, New Innovator, Top Idea</li>
                         <li>August 2018: Fan Club President's Award at "Zukoke Trio 40th Anniversary Reunion Bibliobattle 2018"</li>
+                    </ul>
+                    
+                    <h3>Patent & Trademark</h3>
+                    <ul>
+                        <li>September 10, 2025: Registered Trademark for "Daitaisan" (だいたい算), Registration No. 6966525</li>
+                    </ul>
+                `
+            },
+            awards: {
+                title: "Awards & Trademarks",
+                content: `
+                    <h3>Awards and trademarks received through various activities.</h3>
+                    
+                    <h3>Awards</h3>
+                    <ul>
+                        <li>July 2013: Japan Foundation Award at "Design Exhibition to Change the Future: Hackathon for Social Change"</li>
+                        <li>January 2018: Singularity University Japan Global Impact Challenge, 2018 Winner</li>
+                        <li>May 2018: OpenIDEO Early Childhood Innovation Prize, New Innovator, Top Idea</li>
+                        <li>August 2018: Fan Club President's Award at "Zukoke Trio 40th Anniversary Reunion Bibliobattle 2018"</li>
+                    </ul>
+                    
+                    <h3>Patent & Trademark</h3>
+                    <ul>
+                        <li>September 10, 2025: Registered Trademark for "Daitaisan" (だいたい算), Registration No. 6966525</li>
                     </ul>
                 `
             },
