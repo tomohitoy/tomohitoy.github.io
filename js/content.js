@@ -51,8 +51,8 @@ const siteContent = {
                 summary: "学習者の認知プロセスやメタ認知を，データと記述の両側面で研究しています．"
             },
             awards: {
-                title: "受賞・特許商標",
-                subtitle: "Awards & Patents",
+                title: "受賞・特許・商標",
+                subtitle: "Awards, Patents & Trademarks",
                 summary: "これまでの活動のなかで頂いた賞や特許・商標です．"
             },
             contact: {
@@ -290,7 +290,7 @@ const siteContent = {
                 `
             },
             awards: {
-                title: "受賞・特許商標",
+                title: "受賞・特許・商標",
                 content: `
                     <h3>これまでの活動のなかで頂いた賞や特許・商標です．</h3>
                     
@@ -368,9 +368,9 @@ const siteContent = {
                 summary: "Researches human learning from both data-driven and descriptive approaches."
             },
             awards: {
-                title: "Awards & Trademarks",
+                title: "Awards, Patents & Trademarks",
                 subtitle: "Achievements",
-                summary: "Awards and trademarks received through various activities."
+                summary: "Awards, patents, and trademarks received through various activities."
             },
             contact: {
                 title: "Contact",
@@ -621,9 +621,9 @@ const siteContent = {
                 `
             },
             awards: {
-                title: "Awards & Trademarks",
+                title: "Awards, Patents & Trademarks",
                 content: `
-                    <h3>Awards and trademarks received through various activities.</h3>
+                    <h3>Awards, patents, and trademarks received through various activities.</h3>
                     
                     <h3>Awards</h3>
                     <ul>

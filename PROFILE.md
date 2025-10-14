@@ -84,7 +84,7 @@ Google for Education 認定イノベーター（#JPN19）
 - 2019年11月30日 QuickClickで生まれる探究する学び　未来の教室 in 明日の教室，『明日の教室 特別セッション 関西私立校のICT活用実践』にて招待講演　京都橘大学
 - 2022年10月14日 So You Think You Can't Innovate? Think Again: bridge learning "Connecting Teachers by Building Community of Learner-Centered Practice", at Labuan Matriculation College, Malaysia, Oct. 14th 2022
 
-## 受賞・特許商標 / Awards & Trademarks
+## 受賞・特許・商標 / Awards, Patents & Trademarks
 
 ### これまでの活動のなかで頂いた賞や特許・商標です．
 
