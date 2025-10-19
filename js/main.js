@@ -186,13 +186,13 @@ class PortfolioApp {
         
         // Add social media links
         if (siteContent.social) {
-            // Twitter
+            // X (Twitter)
             if (siteContent.social.twitter) {
                 const twitter = document.createElement('a');
                 twitter.href = siteContent.social.twitter;
                 twitter.target = '_blank';
-                twitter.innerHTML = '<i class="fab fa-twitter"></i>';
-                twitter.title = 'Twitter';
+                twitter.innerHTML = '<i class="fab fa-x-twitter"></i>';
+                twitter.title = 'X (Twitter)';
                 socialLinks.appendChild(twitter);
             }
             
