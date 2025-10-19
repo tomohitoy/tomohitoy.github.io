@@ -439,9 +439,44 @@ h1, h2, h3, h4, h5, h6 {
 
     .card-contact {
         grid-column: 1 / -1; /* Span both columns */
-        aspect-ratio: 3/1;
         width: 100%;
         height: auto;
+        aspect-ratio: unset !important; /* Override desktop square ratio */
+        padding: 1rem; /* Compact padding for mobile */
+    }
+    
+    /* Contact card specific mobile adjustments */
+    .card-contact .card-header {
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-contact .card-title {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .card-contact .card-subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-contact .card-body {
+        font-size: 0.85rem;
+    }
+    
+    .card-contact .card-body p {
+        margin: 0.3rem 0;
+    }
+    
+    .card-contact .social-links {
+        margin-top: 0.5rem;
+        gap: 0.4rem;
+    }
+    
+    .card-contact .social-links a {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
     }
     
     .container {
